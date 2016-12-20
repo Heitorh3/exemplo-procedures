@@ -18,7 +18,7 @@ create table entrega (
 
 DELIMITER $$
 
-CREATE PROCEDURE analisarPedido(vCodigo bigint, OUT vAnalise varchar(50))
+CREATE PROCEDURE analisarPedido(IN vCodigo bigint, OUT  vAnalise varchar(50))
 BEGIN
    DECLARE vStatus varchar(50);
    
